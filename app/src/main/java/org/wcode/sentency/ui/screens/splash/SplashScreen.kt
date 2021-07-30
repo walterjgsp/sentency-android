@@ -1,10 +1,9 @@
-package org.wcode.sentency.ui.screens
+package org.wcode.sentency.ui.screens.splash
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
@@ -23,7 +22,6 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import org.koin.androidx.compose.getViewModel
 import org.wcode.sentency.R
-import org.wcode.sentency.ui.screens.splash.SplashScreenViewModel
 import org.wcode.sentency.ui.theme.SentencyColors
 
 @Composable
@@ -33,7 +31,7 @@ fun SplashScreen(navController: NavController) {
     SplashScreenContent()
 }
 
-@Preview()
+@Preview
 @Composable
 fun SplashScreenContent() {
 

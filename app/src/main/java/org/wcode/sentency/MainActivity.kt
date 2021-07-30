@@ -13,8 +13,10 @@ import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 import org.wcode.sentency.ui.shared.Screen
 import org.wcode.sentency.ui.shared.viewModelModule
-import org.wcode.sentency.ui.screens.SplashScreen
+import org.wcode.sentency.ui.screens.splash.SplashScreen
 import org.wcode.sentency.ui.screens.home.HomeScreen
+import org.wcode.sentency.ui.shared.networkModule
+import org.wcode.sentency.ui.shared.repositoryModule
 import org.wcode.sentency.ui.theme.SentencyTheme
 
 class MainActivity : ComponentActivity() {
@@ -43,7 +45,7 @@ class MainActivity : ComponentActivity() {
         startKoin {
             androidLogger()
             androidContext(context)
-            modules(viewModelModule)
+            modules(viewModelModule, networkModule, repositoryModule)
         }
     }
 }
